@@ -20,4 +20,4 @@ Aplikasi ini adalah sistem manajemen reservasi tiket sederhana yang dibangun men
 
 ## 5. 🎥 Link Dokumentasi
 📌 Dokumentasi video dapat dilihat melalui tautan berikut:
-[▶️ YouTube - Reservasi Tiket](https://www.youtube.com/watch?v=example)
+[▶️ YouTube - Reservasi Tiket](https://youtu.be/-gLdS6nTuyQ?si=aGCPGLimQfIpdfOO)
