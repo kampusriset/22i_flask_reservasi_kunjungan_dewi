@@ -101,3 +101,6 @@ Kontribusi sangat diterima. Silakan buat pull request atau ajukan issue jika And
 
 ## Lisensi
 Proyek ini menggunakan lisensi [MIT](LICENSE).
+
+## Flowchart
+Berikut flowchartnya: 
