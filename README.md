@@ -102,5 +102,7 @@ Kontribusi sangat diterima. Silakan buat pull request atau ajukan issue jika And
 ## Lisensi
 Proyek ini menggunakan lisensi [MIT](LICENSE).
 
-## Flowchart
-Berikut flowchartnya: 
+## Anggota Kelompok
+1. Viona Leny Anjani
+2. Shanny Novalina Turnip
+3. Ulfah Nur Uzlifah 
