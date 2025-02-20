@@ -1,0 +1,33 @@
+<!-- create.html -->
+{% extends 'base.html' %}
+{% block title %}Create Reservation{% endblock %}
+{% block content %}
+<h2>Create New Reservation</h2>
+<form method="POST" action="/create">
+    <div class="mb-3">
+        <label for="nama" class="form-label">Customer Name</label>
+        <input type="text" class="form-control" id="nama" name="nama" required>
+    </div>
+    <div class="mb-3">
+        <label for="kategori_destinasi" class="form-label">Kategori Destinasi</label>
+        <select class="form-select" id="kategori_destinasi" name="kategori_destinasi" required>
+            <option value="Pantai">Pantai</option>
+            <option value="Gunung">Gunung</option>
+            <option value="Kota Wisata">Kota Wisata</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="kota_destinasi" class="form-label">Kota Destinasi</label>
+        <input type="text" class="form-control" id="kota_destinasi" name="kota_destinasi" required>
+    </div>
+    <div class="mb-3">
+        <label for="jumlah_orang" class="form-label">Jumlah Orang</label>
+        <input type="number" class="form-control" id="jumlah_orang" name="jumlah_orang" required>
+    </div>
+    <div class="mb-3">
+        <label for="tanggal" class="form-label">Tanggal</label>
+        <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

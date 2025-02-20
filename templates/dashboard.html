@@ -1,0 +1,36 @@
+<!-- dashboard.html -->
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h2>Dashboard</h2>
+<a href="/create" class="btn btn-success mb-3">Add New Reservation</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Customer Name</th>
+            <th>Kategori Destinasi</th>
+            <th>Kota Destinasi</th>
+            <th>Jumlah Orang</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for reservation in reservations %}
+        <tr>
+            <td>{{ reservation.id }}</td>
+            <td>{{ reservation.nama }}</td>
+            <td>{{ reservation.kategori_destinasi }}</td>
+            <td>{{ reservation.kota_destinasi }}</td>
+            <td>{{ reservation.jumlah_orang }}</td>
+            <td>{{ reservation.tanggal }}</td>
+            <td>
+                <a href="/update/{{ reservation.id }}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="/delete/{{ reservation.id }}" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,33 @@
+<!-- update.html -->
+{% extends 'base.html' %}
+{% block title %}Update Reservation{% endblock %}
+{% block content %}
+<h2>Update Reservation</h2>
+<form method="POST" action="/update/{{ reservation.id }}">
+    <div class="mb-3">
+        <label for="nama" class="form-label">Customer Name</label>
+        <input type="text" class="form-control" id="nama" name="nama" value="{{ reservation.nama }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="kategori_destinasi" class="form-label">Kategori Destinasi</label>
+        <select class="form-select" id="kategori_destinasi" name="kategori_destinasi" required>
+            <option value="Pantai" {% if reservation.kategori_destinasi == 'Pantai' %}selected{% endif %}>Pantai</option>
+            <option value="Gunung" {% if reservation.kategori_destinasi == 'Gunung' %}selected{% endif %}>Gunung</option>
+            <option value="Kota Wisata" {% if reservation.kategori_destinasi == 'Kota Wisata' %}selected{% endif %}>Kota Wisata</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="kota_destinasi" class="form-label">Kota Destinasi</label>
+        <input type="text" class="form-control" id="kota_destinasi" name="kota_destinasi" value="{{ reservation.kota_destinasi }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="jumlah_orang" class="form-label">Jumlah Orang</label>
+        <input type="number" class="form-control" id="jumlah_orang" name="jumlah_orang" value="{{ reservation.jumlah_orang }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="tanggal" class="form-label">Tanggal</label>
+        <input type="date" class="form-control" id="tanggal" name="tanggal" value="{{ reservation.tanggal }}" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+{% endblock %}
