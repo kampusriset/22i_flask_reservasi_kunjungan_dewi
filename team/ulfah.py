@@ -2,11 +2,11 @@
 def perkenalan():
     nama = "Ulfah"
     nim = "488"
-    peran = "Membuat coding untuk tampilan"
+    peran = "Membantu membuat coding untuk tampilan"
     deskripsi = (
         f"Halo, saya {nama} (NIM: {nim}).\n"
-        "Saya berperan sebagai pembuat coding untuk tampilan.\n"
-        "Saya memastikan untuk setiap tampilan fitur dalam aplikasi dikembangkan dengan baik."
+        "Saya berperan sebagai membantu pembuatan coding untuk tampilan dan sebagai helper.\n"
+        "Agar tampilan fitur dalam aplikasi dikembangkan dengan baik."
     )
     print(deskripsi)
 
